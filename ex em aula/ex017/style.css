@@ -1,0 +1,52 @@
+@import url();
+body{
+    /*Safe fonts, caso o uma não funcione, outra ao lado sera testada já que são semelhantes e podem se subestituirem, porém, caso ambas não funcionem, a última sera utilizada já que é uma forma genérica. */ 
+
+    font-family: 'Work Sans' Arial, Helvetica, sans-serif;
+    /*
+    Medidas Absolutas
+    cm, mm, in(polegada), px, pt, pc
+    Medidas Relativas
+    em, ex, rem, vw, vh, %
+    As mais usadas são 'px' e 'em'.
+     */
+
+    font-size: 1em; /*Geralmente 16px é o tamanho padrão das fontes no navegador. 1em = 16px 
+    já se usarmos 2em = 36px
+    0.5em = 8px etc...
+    */
+    font-weight: bolder;
+    
+    /*font-weight = peso da fonte
+    pode ser usado: lighter normal bold bolder
+
+    também pode ser usado com base numérica onde varia de 100 a 900, como base 400 = normal
+    */
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+h1{
+    /*
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+
+    shorhand font = simplifica tudo em uma única linha com 'font', para isso temos uma ordem :
+
+    font-style -> font-weight -> font-size -> font-family
+
+    Na prática temos:
+
+   */
+    font: italic bolder 3em 'Work Sans', sans-serif;
+    
+
+
+}
+
+h2{
+    font: bold 2em 'Work Sans';
+ }

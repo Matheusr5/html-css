@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'droid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body{
+    margin: 0px;
+    background-color: rgb(106, 211, 162);
+    
+}
+#principal{
+    text-shadow: 3px 3px 1px black;
+}
+header{
+
+    color: white;
+    padding: 30px;
+    text-align: center;
+    background-image:linear-gradient(0deg, rgb(10, 49, 10), rgb(62, 194, 62)); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger
+    
+       
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-shadow: 3px 3px 1px black;
+}
+nav{
+    text-align: left; 
+     
+}
+a{
+    color: white;
+    padding: 10px;
+    
+}
+nav > a{
+    text-decoration: none;
+}
+nav >a:hover{
+    background-color: rgb(123, 190, 34);
+    border-radius: 10px;
+    transition-duration: 1s;
+    box-shadow: 1px 1px 1px black ;
+    
+}
+section{
+    height: 2000px;
+    width: 1300px;
+    background-color: white;
+    margin: auto;
+}
+#titulo{
+    color: rgb(18, 90, 18);
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'droid', Times, serif; 
+    font-size: 3em;
+}
+p{
+    text-indent: 1em;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+h2{
+ font-family: 'droid';
+ color: rgb(18, 90, 18);
+ font-size: 2em;
+ padding-left: 20px;
+ background-image: linear-gradient(to right, rgb(191, 221, 191),white);
+}
+picture{
+   padding: 275px;
+}
+#irimag{
+    padding-left: 150px;
+}
+#bugdroid{
+    padding-left: 480px;
+}
+#localvid{
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(4, 70, 4);
+    padding: 50px;
+}
+article{
+    height: 700px;
+    width: 1300px;
+    background-color: white;
+    padding-top: 30px;  
+    
+}
+
+#subsec{
+    width: 1230px;
+    height: 600px;
+    background-color: rgb(180 217 199);
+    border-radius: 10px;
+    
+}
+
+#backtitulo{
+    background-image: linear-gradient(to right, rgb(99, 179, 99), rgb(84 165 134));
+    padding: 10px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+   
+}
+ a{
+    color: black;
+    font-weight: bolder;
+    
+}
+
+a:hover{
+    color: red;
+}
+#linktext{
+    text-decoration: none;
+    color: rgb(12, 68, 12);
+}
+
+#linktext:hover{
+    text-decoration: underline;
+
+}
+#textfinal{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    text-align: center;
+    background-color: rgb(6, 37, 6);
+    color: rgb(226, 214, 214);
+    font-size: 15px;
+}
+#assinatura{
+    padding: 5px;
+    
+}
