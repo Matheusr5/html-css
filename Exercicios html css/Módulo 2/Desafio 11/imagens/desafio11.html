@@ -4,19 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 11</title>
+    <title>Exercício 11</title>
     <style>
-       div{
-           text-align: center;       
-       }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container{
+            position: relative;
+            background-image: url('espaco.jpg');
+            background-color: black;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        #conteudo{
+            position: absolute;
+            background-image: url('astronauta.png') ;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain ;
+            left: 50%;
+            top: 50%;
+            height: 50%;
+            width: 50%;
+            transform: translate(-50%,-50%);
+
+            
+
+            
+            
+            
+
+
+        }
     </style>
 </head>
 <body>
-    <div>
-        
-     <img src="espaco.jpg" alt="fundo">
-     <img src="astronauta.png" alt="frente">
-     
-    </div>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
+
+
+
+
+
