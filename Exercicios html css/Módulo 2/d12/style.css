@@ -1,0 +1,64 @@
+@charset "UTF=8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+*{
+    margin: 0px;
+    
+}
+
+header{
+    min-height: 200px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 75px;
+}
+h1{
+    font-family: Passion one, sans-serif;
+    font-size: 5em;
+}
+
+cite{
+    font-size: 1.5em;
+}
+
+main p{
+    font-size: 3em;
+    font-family:Sriracha ;
+    padding: 20px;
+}
+
+#parallax1{
+    background-color: antiquewhite;
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#parallax2{
+    background-color: antiquewhite;
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.borda{
+    color: white;
+    background-color: rgba(223, 207, 207, 0.103);
+    display: inline-block;
+    margin: 15px;
+}
+.borda2{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.397);
+    display: inline-block;
+    margin: 15px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
