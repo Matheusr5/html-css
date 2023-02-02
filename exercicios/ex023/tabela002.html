@@ -12,6 +12,8 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            margin: auto;
             
         }
         td:nth-child(2){
@@ -29,24 +31,31 @@
             padding: 10px;
         }
 
+        thead, tfoot{
+            background-color: rgb(32, 30, 30);
+            color: white;
+            background-color: rgb(32, 30, 30);
+            color: white;
+        }
         thead{
+            position: sticky;
+            top: -1px;
             background-color: rgb(32, 30, 30);
-            color: white;
         }
-        tfoot{
-            background-color: rgb(32, 30, 30);
-            color: white;
+        tr:hover{
+            border: 2px solid rgb(23, 9, 226);
         }
+        
         tbody > tr:nth-child(odd) {
             background-color: lightgrey;
         }
         tbody > tr:nth-child(even){
             background-color: white;
+            
         }
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TEBELAS GRANDES
     TABLE
         THEAD
@@ -184,5 +193,6 @@
                 </tr>
              </tfoot>
          </table>
+         
 </body>
 </html>
