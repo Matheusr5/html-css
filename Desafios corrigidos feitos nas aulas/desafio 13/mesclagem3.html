@@ -51,23 +51,27 @@
          .manmovie{
             background-color: rgb(212, 212, 231);
          }
+         caption{
+             background-color: lightgray;
+             border: 1px solid black;
+         }
         
     </style>
 </head>
 <body>
     <table>
-
+        <caption>Filmes favoritos</caption>
         <thead>
            <tr>
-            <th>Grupo</th>
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
 
         <tbody>
           <tr>
-              <th rowspan="3" id="frosa" >Mulheres</th>
+              <th rowspan="3" scope="rowgroup" id="frosa" >Mulheres</th>
                 <td class="femalemovie">Ana Maria</td>
                 <td class="femalemovie">Alien</td>
                 <td class="femalemovie">Rambo</td>
@@ -88,7 +92,7 @@
          
             </tr>
             <tr>        
-              <th rowspan="3" id="mazul">Homens</th>
+              <th rowspan="3" scope="rowgroup" id="mazul">Homens</th>
                 <td class="manmovie">Bruno Mendonça</td>
                 <td class="manmovie">Intocáveis</td>
                 <td class="manmovie">Amnésia</td>
