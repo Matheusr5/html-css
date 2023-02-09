@@ -6,26 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Teste</title>
     <style>
+
         body{
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: lightgray;
+            
         }
 
         caption{
-            font-size: 1.3em;
+            font-size: 1.5em;
             font-weight: bolder;
             padding: 20px;
         }
 
         table{
             border-collapse: collapse;
+            width: 95vw;
+            margin: auto;
+            background-color: white;
         }
 
         th,td{
             border: 1px solid black;
             padding: 10px;
+
+        }
+        th{
+            background-color: white;
         }
 
-        tr:nth-child(even){
+        tr:nth-child(odd){
             background-color: rgb(228,228 , 228);
         }
         div#container{
@@ -35,10 +46,9 @@
     </style>
 </head>
 <body>
-    <h1>Isso é um teste!</h1>
     <div id="container">
         <table>
-            <caption>Tabelas Responsivas</caption>
+            <caption>Venda de produtos por mês</caption>
             <thead>
                 <tr>
                     <th>Produto</th>
