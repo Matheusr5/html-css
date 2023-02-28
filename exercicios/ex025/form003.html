@@ -6,31 +6,67 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+       
+        #container{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            .botao:hover{
+                background-color: rgb(139, 177, 177);
+                transition-duration: .5s ;
+                transform: scale(1.05);
+            }
+            
+            .botao:active{
+                transform: scale(95%);
+            }
+
+    </style>
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
+    <form action="cadastro.php" method="get" autocomplete="on" id="container">
+        <div id="conteudo">
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
-        </p>
-        <p>
+       
             <label for="imedia">Média:</label>
             <input type="number" name="media" id="imedia" min="0" max="10"  step="0.1" required>
-        </p>
-        <p>
+        
             <label for="imes">Período Letivo</label>
             <input type="month" name="mes" id="imes" value="2020-07">
-        </p>
-        <label for="idia">Dia da Prova:</label> <input type="date" name="dia" id="idia">
-        <p>
+        
+            <label for="idia">Dia da Prova:</label> <input type="date" name="dia" id="idia">
+            <div>
             <label for="ihora">Horário da Prova:</label>
             <input type="time" name="Hora" id="ihora">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+            </div>
+            <input type="submit" value="Enviar" class="botao">
+            <input type="reset" value="Limpar" class="botao">
+            
+        </div>
     </form>
 </body>
 </html>
