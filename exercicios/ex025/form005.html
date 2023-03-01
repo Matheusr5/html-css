@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset{
+            width: 12%;
+            margin: auto;
+            
+        }
+        p, h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        .botao{
+            display: inline-block;
+        }
+
+        fieldset, legend{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.js" autocomplete="on" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" checked><label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfam" ><label for="isxfem">Feminino</label>
+        </fieldset>
+     <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas"> Basquete </label><br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol </label> <br> 
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat"> Natação </label><br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br> 
+     </fieldset>
+        <p>
+            <input type="submit" value="Enviar" class="botao">
+            <input type="reset" value="Limpar" class="botao">
+        </p>
+    </form>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            const esportes = form.querySelectorAll('input[type=checkbox]:checked');
+            if (esportes.length < 1) {
+                event.preventDefault(); // previne o envio do formulário
+                alert('Selecione pelo menos um esporte favorito.');
+            }
+        });
+    </script>
+</body>
+</html>
