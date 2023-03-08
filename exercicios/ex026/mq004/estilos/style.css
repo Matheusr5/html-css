@@ -21,17 +21,17 @@ body{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    overflow-x: hidden;
+    
 }
 
 main{
     background-color: rgba(255, 255, 255, 0.842);
-    max-width: 300px;
+    width: 300px;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
-    overflow-x: auto;
+    
     
 }
 
